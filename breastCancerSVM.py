@@ -9,7 +9,7 @@ df.replace('?', -9999, inplace=True)
 df.drop(columns=['id'], inplace=True)
 
 # We can produce a correlation matrix to gauge correlation (Not causation) between independent variables. Relationships greater than 0.70 and less than -0.70 are to be considered highly correlated.
-correlation_matrix = df.corr(numeric_only=True)
+correlation_matrix = df.corr()
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
